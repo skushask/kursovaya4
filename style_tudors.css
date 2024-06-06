@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.containerMain {
+    width: 100%;
+    margin: 0 auto;
+    background-color:rgba(70, 70, 70, 0.918);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header, footer {
+    width: 53%;
+    background-color: rgb(233, 76, 77);
+    padding: 2% 4.5%;
+    display: flex;
+    /* элементы начинаются с конца флексбокса */
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+
+.buttons {
+    width: 34%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a {
+    color: rgb(0, 0, 0);
+}
+
+.btnMain, .btnRulers {
+    display: inline-flex; /* кнопка по тексту */ 
+    font-family: centurygothic_bold;
+    font-size: 1.3vw;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+}
+
+.btnRulers ul {
+    position: absolute;
+    width: 7.4%;
+    margin-top: 1.5%;
+    background: rgb(233, 76, 77);
+    font-size: 1.1vw;
+    display: none;
+}
+
+.btnRulers ul li {
+    width: 100%;
+    border: 0.1vw solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+    width: 53%;
+    background-color: rgb(0, 0, 0);
+    padding: 0 4.5%;
+    color: rgb(249, 229, 143);
+}
+
+.containerTitle {
+    margin-top: 15%;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.titleAge {
+    font-family: centurygothic;
+    align-self: flex-end;
+}
+
+.titleOfTudors {
+    font-family: Gorgeous;
+    align-self: flex-end;
+}
+
+.textTudors {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockRight, .blockLeft {
+    padding: 0.7vw 0.4vw;
+    width: 48%;
+    font-family: centurygothic;
+    font-size: 0.93vw;
+    border-top: 0.3vw solid rgb(233, 76, 77);
+    border-bottom: 0.3vw solid rgb(233, 76, 77);
+    color: rgb(249, 229, 143);
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.containerTimeline {
+    display: flex;
+    justify-content: space-between;
+    font-family: centurygothic;
+    font-size: 1.1vw;
+    padding-top: 8%;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.card1, .card2 {
+    width: 16.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+}
+
+.card1{
+    flex-wrap: wrap;
+}
+
+.card2{
+    margin-top: 31.7%;
+    flex-wrap: wrap-reverse;
+}
+
+.pic {
+    height: 9.7vw;
+    width: 85%;
+    border: 0.3vw solid rgb(0, 0, 0);
+    outline: 0.2vw solid rgb(249, 229, 143);
+}
+
+.card1 a, .card2 a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.label a {
+    color: rgb(249, 229, 143);
+    border: none;
+    outline: none;
+}
+
+.btn a {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6 {
+    background-size: cover;
+    background-position: center;
+}
+
+.pic1 {
+    background-image: url("images/henry7.jpg");
+}
+
+.pic2 {
+    background-image: url("images/henry8.jpg");
+}
+
+.pic3 {
+    background-image: url("images/edward6.jpg");
+}
+
+.pic4 {
+    background-image: url("images/janegrey.jpg");
+}
+
+.pic5 {
+    background-image: url("images/mary1.jpg");
+}
+
+.pic6 {
+    background-image: url("images/elizabeth1.jpg");
+}
+
+.btn{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    background-color: rgb(249, 229, 143);
+    margin: 20%;
+    position: relative;
+}
+
+.label{
+    display: inline-block;
+    text-align: center;
+}
+
+.line{
+    position: absolute;
+    border-top: 0.3vw solid rgb(249, 229, 143);
+    width: 100%;
+    top: 56.5%;
+    transform: translateY(-50%);
+}
+
+.footerInfo {
+    font-family: centurygothic_bold;
+    font-size: 1.3vw;
+}
+
+.btnMain a:hover, .btnRulers:hover {
+    color: rgb(249, 229, 143);
+}
+
+.btnRulers:hover > ul {
+    display: initial;
+}
+
+.btnRulers ul li a:hover{
+    color: rgb(249, 229, 143);
+}
+
+.card1:hover .pic, .card2:hover .pic{
+    outline: 0.2vw solid rgb(233, 76, 77); 
+    scale: 1.1;
+}
+
+.card1:hover .btn, .card2:hover .btn{
+    background-color: rgb(233, 76, 77); 
+}
+
+.card1:hover .label a, .card2:hover .label a{
+    color: rgb(233, 76, 77); 
+    scale: 1.1;
+}
